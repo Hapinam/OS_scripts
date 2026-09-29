@@ -1,0 +1,9 @@
+*.log
+*.out
+*.trc
+*.trm
+.env
+*.env
+.DS_Store
+.idea/
+.vscode/

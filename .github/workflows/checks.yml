@@ -1,0 +1,14 @@
+name: checks
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repository checks
+        run: bash ./tools/check_repo.sh
